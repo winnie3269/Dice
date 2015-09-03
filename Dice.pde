@@ -1,3 +1,4 @@
+Die dill;
 void setup()
 {
 	noLoop();
