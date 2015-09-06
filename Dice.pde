@@ -1,4 +1,5 @@
 Die dill;
+Die 
 void setup()
 {
 	size(300,300);
@@ -10,7 +11,9 @@ void draw()
 	{
 	  Die dill = new Die(x,150);
 	  dill.roll;
-	  dill.show;//your code here
+	  dill.show;
+	 }
+	 //your code here
 }
 void mousePressed()
 {
