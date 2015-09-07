@@ -2,6 +2,7 @@ Die dill;
 void setup()
 {
 	size(300,300);
+	background(#028482);
 	noLoop();
 }
 void draw()
