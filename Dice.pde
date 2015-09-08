@@ -25,8 +25,8 @@ class Die //models one single dice cube
 	int myX, myY;//variable declarations here
 	Die(int x, int y) //constructor
 	{
-		;
-		//variable initializations here
+	  	myX=x;
+	  	myY=y;//variable initializations here
 	}
 	void roll()
 	{
