@@ -7,7 +7,7 @@ void setup()
 }
 void draw()
 {
-	for (int x=50; x<250; x=x+60)
+	for (int x=50; x<250; x=x+)
 	{
 	  Die dill = new Die(x,150);
 	  dill.roll;
@@ -25,15 +25,19 @@ class Die //models one single dice cube
 	int myX, myY;//variable declarations here
 	Die(int x, int y) //constructor
 	{
-		roll();
+		;
 		//variable initializations here
 	}
 	void roll()
 	{
-		if(Math.random<.17)//your code here
+		if (int)(Math.random()*7)-1//your code here
+		 
 	}
 	void show()
 	{
-		while//your code here
+		for (int d=0; d<300; d++)
+		fill(255);
+		noStroke();
+		rect(0,0,30,30);//your code here
 	}
 }
