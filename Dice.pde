@@ -43,6 +43,8 @@ class Die //models one single dice cube
     strokeWeight(5);
     fill(255);
     rect(myX, myY, 50, 50);//your code here
+    textSize(20);
+    text("Dice present: 25",75,25);
   }
 }
 
