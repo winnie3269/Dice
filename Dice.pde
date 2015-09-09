@@ -7,10 +7,11 @@ void setup()
 }
 void draw()
 {
-  for (int x=5; x<299; x=x+60)
+  for (int x=2; x<295; x=x+50)
   {
+    for(int y=60; y<295;y=y+50)
     {
-      Die dill = new Die(x, x);
+      Die dill = new Die(x, y);
       dill.roll();
       dill.show();
     }
@@ -44,3 +45,4 @@ class Die //models one single dice cube
     rect(myX, myY, 50, 50);//your code here
   }
 }
+
