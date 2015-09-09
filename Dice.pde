@@ -7,11 +7,10 @@ void setup()
 }
 void draw()
 {
-  for (int x=1; x<299; x=x+50)
+  for (int x=5; x<299; x=x+60)
   {
-    for (int y=1; y<299; y=y+50)
     {
-      Die dill = new Die(x, 150);
+      Die dill = new Die(x, x);
       dill.roll();
       dill.show();
     }
@@ -23,7 +22,7 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-  int myX, myY;//variable declarations here
+  int dots, myX, myY;//variable declarations here
   Die(int x, int y) //constructor
   {
     myX=x;
@@ -35,13 +34,12 @@ class Die //models one single dice cube
     int dots = 1;//your code here
     {
       fill(0);
-      ellipse(25, 175, 3, 3);
+      ellipse(myX, myY, 3, 3);
     }
   }
   void show()
   {
-    for (int d=0; d<300; d++)
-      strokeWeight(5);
+    strokeWeight(5);
     fill(255);
     rect(myX, myY, 50, 50);//your code here
   }
