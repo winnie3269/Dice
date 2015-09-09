@@ -51,3 +51,4 @@ class Die //models one single dice cube
     text("Dice present: 25", 75, 25);
   }
 }
+//find a way to display the dots more efficiently
