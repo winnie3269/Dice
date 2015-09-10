@@ -7,9 +7,9 @@ void setup()
 }
 void draw()
 {
-  for (int x=2; x<295; x=x+50)
+  for (int x=2; x<=290; x=x+49)
   {
-    for (int y=60; y<295; y=y+50)
+    for (int y=50; y<=290; y=y+49)
     {
       Die dill = new Die(x, y);
       dill.roll();
