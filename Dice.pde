@@ -19,7 +19,7 @@ void draw()
     }
   }
   fill(0);
-  text("Dice present: 400", 100, 30);
+  text("Dice present: 380", 100, 30);
   text("Your Lucky Number:" +sum, 650, 30);
 }
 void mousePressed()
