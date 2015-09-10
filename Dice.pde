@@ -1,25 +1,31 @@
 Die dill;
+int sum=0;
 void setup()
 {
-  size(300, 300);
+  size(1004, 1003);
   noLoop();
 }
 void draw()
 {
   background(#028482);
-  for (int x=2; x<=290; x=x+49)
+  for (int x=2; x<=1000; x=x+50)
   {
-    for (int y=50; y<=290; y=y+49)
+    for (int y=50; y<=1000; y=y+50)
     {
       Die dill = new Die(x, y);
       dill.roll();
       dill.show();
+      sum=sum+dill.dots;
     }
   }
+  fill(0);
+  text("Dice present: 400", 100, 30);
+  text("Your Lucky Number:" +sum, 650, 30);
 }
 void mousePressed()
 {
   redraw();
+  sum=0;
 }
 class Die //models one single dice cube
 {
@@ -41,7 +47,6 @@ class Die //models one single dice cube
     fill(255);
     rect(myX, myY, 50, 50);
     textSize(20);
-    text("Dice present: 25", 75, 25);
     if (dots==1) 
     {
       fill((int)(Math.random()*254)+1, (int)(Math.random()*254)+1, (int)(Math.random()*254)+1);
