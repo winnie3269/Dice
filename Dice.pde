@@ -35,12 +35,18 @@ class Die //models one single dice cube
     if (dots==1) //your code here
     {
       fill(0);
-      ellipse(myX, myY, 3, 3);
+      ellipse(myX/2, myY/2, 3, 3);
     }
-    //if (dots==2)
-    //{
-    // fill(0);
+    if (dots==2)
+    {
+      fill(0);
+      ellipse(myX/4, myY/2, 3, 3);
+      ellipse(myX/4, myY/4, 3, 3);
+    }
+    //if (dots==3)
+    // {
     // ellipse(
+    //   }
   }
   void show()
   {
